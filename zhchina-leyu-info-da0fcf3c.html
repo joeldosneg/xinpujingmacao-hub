@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>认识乐鱼 · 用途说明页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f2f4f8;
+            color: #1e1f28;
+            line-height: 1.65;
+        }
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(145deg, #0f172a 0%, #1a2332 100%);
+            padding: 4rem 1.5rem 3.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #b9a87c;
+            opacity: 0.5;
+        }
+        .hero-tagline {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            color: #b9a87c;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            opacity: 0.85;
+        }
+        .hero-title {
+            font-size: 2.6rem;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 1.2;
+            max-width: 680px;
+            margin: 0 auto 0.8rem;
+        }
+        .hero-sub {
+            font-size: 1rem;
+            color: #b0b8c9;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        /* 正文区：浅色背景 */
+        .content {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 2.8rem 1.5rem 3.5rem;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+            border-radius: 0 0 16px 16px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 2.2rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+            border-left: 4px solid #b9a87c;
+            padding-left: 1rem;
+        }
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 1.3rem;
+            font-size: 1rem;
+            color: #2d3748;
+        }
+        a {
+            color: #b8860b;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover {
+            color: #8b6914;
+            border-bottom-color: #b9a87c;
+        }
+        /* 特点列表 — 卡片式布局 */
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.6rem 0 1.2rem;
+        }
+        .feature-card {
+            flex: 1 1 200px;
+            background: #f8f9fc;
+            border-radius: 14px;
+            padding: 1.2rem 1rem 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+            border: 1px solid #eff1f5;
+        }
+        .feature-card h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            color: #1f2a41;
+        }
+        .feature-card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: #3e4a5c;
+        }
+        .faq-note {
+            background: #f3f5f9;
+            padding: 1.2rem 1.5rem;
+            border-radius: 14px;
+            margin-top: 2rem;
+            border-left: 3px solid #b9a87c;
+        }
+        .faq-note p {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+        .faq-note .faq-q {
+            font-weight: 500;
+            color: #1e293b;
+        }
+        .closing {
+            margin-top: 2.2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e2e6ed;
+            font-size: 0.95rem;
+            color: #3b455a;
+        }
+        @media (max-width: 600px) {
+            .hero-title {
+                font-size: 1.9rem;
+            }
+            .feature-card {
+                flex: 1 1 100%;
+            }
+            .content {
+                padding: 2rem 1.2rem 2.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 深色头图：开场短句 -->
+<section class="hero">
+    <div class="hero-tagline">一个用途清晰的站点</div>
+    <h1 class="hero-title">快速看懂 · 这个网站做什么</h1>
+    <p class="hero-sub">从界面到功能，你只需要几分钟就能建立初步认知。</p>
+</section>
+
+<!-- 浅色正文区 -->
+<main class="content">
+
+    <!-- 承接段落：来源与用途 -->
+    <p>
+        当你第一次打开一个不熟悉的网站，最直接的想法往往是：<strong>它提供什么？</strong>
+        <a href="https://zhchina-leyu.com">乐鱼</a> 正是围绕这个疑问设计的——它呈现的是与某一品牌或服务平台对应的信息入口。页面结构清晰，没有多余的干扰，你可以在首页快速观察到几个核心模块：导航指引、内容分区以及功能提示。无论你是希望了解服务范围，还是想确认是否与自己的需求匹配，这里都能提供一个明确的起点。
+    </p>
+
+    <p>
+        换句话说，如果你带着“这个网站是否适合我”的想法进来，那么<strong>乐鱼</strong> 的页面布局就是为你梳理答案而存在的。标题、说明、链接都经过安排，让你不必反复猜测。下面列出它几个值得注意的特点。
+    </p>
+
+    <!-- 特点列表 -->
+    <h2 class="section-title">页面特点一览</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>🎯 目标直接</h3>
+            <p>首页集中展示用途，不堆砌无关信息，帮你节省判断时间。</p>
+        </div>
+        <div class="feature-card">
+            <h3>🧭 导航清楚</h3>
+            <p>主要分区一目了然，点击或浏览都有对应反馈，不会迷失方向。</p>
+        </div>
+        <div class="feature-card">
+            <h3>📱 适应性强</h3>
+            <p>无论用手机还是电脑，版面都保持整齐，阅读体验一致。</p>
+        </div>
+    </div>
+
+    <!-- 适用场景 + 提示 -->
+    <h2 class="section-title">适合哪些场景</h2>
+    <p>
+        如果你在寻找一个<strong>能快速识别用途的网站</strong>，或者需要向别人推荐一个风格简洁、信息明确的页面，那么 <a href="https://zhchina-leyu.com">乐鱼</a> 就属于这类。它适合初次接触的人做初步浏览，也适合回头客直接定位到所需内容。没有悬浮广告或突然的弹窗，阅读节奏由你掌控。
+    </p>
+
+    <!-- FAQ 摘要风格提示 -->
+    <div class="faq-note">
+        <p><span class="faq-q">❓ 常见疑问摘要</span></p>
+        <p><strong>这个网站是做什么的？</strong> 它展示与特定服务或品牌相关的信息界面，帮助你快速理解其用途与结构。</p>
+        <p><strong>内容会经常变动吗？</strong> 首页保持稳定，但内部板块可能根据运营需要更新，建议定期浏览。</p>
+        <p><strong>如何获得更多帮助？</strong> 通过页面内的链接或功能区域，通常能找到更详细的说明。</p>
+    </div>
+
+    <!-- 温和结尾 -->
+    <div class="closing">
+        <p>总之，<a href="https://zhchina-leyu.com">乐鱼</a> 的价值不在于花哨的效果，而在于让每个访客都能<strong>快速确认自己来对了地方</strong>。如果你对页面用途仍有疑问，不妨花一分钟从头到尾扫一遍——答案往往就写在结构里。</p>
+        <p style="margin-top:0.8rem; font-style:italic; color:#5a6579;">—— 清晰，本身就是一种指引。</p>
+    </div>
+</main>
+
+</body>
+</html>
